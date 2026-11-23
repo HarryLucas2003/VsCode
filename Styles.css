@@ -297,10 +297,15 @@ h2 {
 
 .favorites ul {
     display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 10px;
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.favorites {
+    grid-column: 1 / -1;
 }
 
 .favorites li a {
@@ -363,6 +368,10 @@ footer {
     }
 
     .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .favorites ul {
         grid-template-columns: 1fr;
     }
 
