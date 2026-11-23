@@ -100,6 +100,11 @@ h1 {
     box-shadow: 0 14px 38px rgb(0 0 0 / 20%);
 }
 
+.sidebar {
+    display: grid;
+    gap: 22px;
+}
+
 h2 {
     margin-bottom: 18px;
     color: #72e3e1;
@@ -118,22 +123,39 @@ h2 {
     margin-bottom: 0;
 }
 
-.favorite-games {
-    margin-top: 24px;
-    padding-top: 22px;
-    border-top: 1px solid rgb(139 161 215 / 24%);
+.university-journey {
+    grid-column: 1 / -1;
 }
 
-.favorite-games h2 {
+.university-journey h2 {
     margin-bottom: 12px;
 }
 
-.favorite-games p {
-    margin-bottom: 12px;
+.university-journey h3 {
+    margin: 22px 0 12px;
+    color: #72e3e1;
+    font-size: 1.12rem;
 }
 
-.favorite-games p:last-child {
+.university-journey p {
+    margin-bottom: 12px;
+    color: #d3dcf1;
+    line-height: 1.75;
+}
+
+.university-journey p:last-child {
     margin-bottom: 0;
+}
+
+.university-journey ul {
+    margin: 8px 0 16px;
+    padding-left: 22px;
+    color: #d3dcf1;
+    line-height: 1.75;
+}
+
+.university-journey li {
+    margin-bottom: 6px;
 }
 
 .section-intro {
@@ -300,7 +322,6 @@ h2 {
 }
 
 .pokemon-card {
-    grid-column: 1;
     margin: 0;
     padding: 14px;
     overflow: hidden;
